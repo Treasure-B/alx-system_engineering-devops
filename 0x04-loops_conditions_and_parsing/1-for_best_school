@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#displays Best School 10 times
+for x in range(10):
+  print(Best School")
