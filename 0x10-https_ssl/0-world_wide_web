@@ -13,12 +13,5 @@ if [ "$#" == 1 ]; then
   domain_information "$1" "web-01"
   domain_information "$1" "web-02"
 elif [ "$#" == 2 ]; then
-  case "$2" in
-    www|lb-01|web-01|web-02)
-      domain_information "$1" "$2"
-      ;;
-    *)
-      echo "Unknown subdomain. Please choose from: www, lb-01, web-01, web-02"
-      ;;
-  esac
+  domain_information "$1" "$2"
 fi
